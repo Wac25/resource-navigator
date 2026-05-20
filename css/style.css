@@ -1,0 +1,113 @@
+:root {
+  --bg: #f5f7fa;
+  --card-bg: #fff;
+  --text: #1a1a2e;
+  --text-secondary: #555;
+  --border: #e8ecf1;
+  --primary: #4f6ef7;
+  --primary-hover: #3b5de7;
+  --hot: #ff6b6b;
+  --radius: 12px;
+  --shadow: 0 2px 12px rgba(0,0,0,.06);
+  --shadow-hover: 0 6px 24px rgba(0,0,0,.1);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #4f6ef7 0%, #6c63ff 100%);
+  color: #fff; padding: 48px 24px 36px; text-align: center;
+}
+header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -.5px; }
+header p { margin-top: 8px; opacity: .85; font-size: 1rem; }
+.search-box {
+  margin-top: 20px; max-width: 480px; margin-left: auto; margin-right: auto;
+  display: flex; gap: 8px;
+}
+.search-box input {
+  flex: 1; padding: 12px 16px; border: none; border-radius: 8px;
+  font-size: 15px; outline: none;
+}
+.search-box input:focus { box-shadow: 0 0 0 3px rgba(255,255,255,.3); }
+.search-box .stat {
+  background: rgba(255,255,255,.2); border-radius: 8px; padding: 12px 16px;
+  white-space: nowrap; font-size: 14px; display: flex; align-items: center;
+}
+
+/* Container */
+.container { max-width: 1200px; margin: 0 auto; padding: 24px 16px; }
+
+/* Categories nav */
+.cat-nav {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;
+  background: var(--card-bg); border-radius: var(--radius);
+  padding: 16px; box-shadow: var(--shadow);
+}
+.cat-nav button {
+  padding: 8px 16px; border: 1px solid var(--border); border-radius: 20px;
+  background: transparent; cursor: pointer; font-size: 14px; color: var(--text);
+  transition: all .2s; white-space: nowrap;
+}
+.cat-nav button:hover { border-color: var(--primary); color: var(--primary); }
+.cat-nav button.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+/* Resource grid */
+.res-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
+
+/* Resource card */
+.card {
+  background: var(--card-bg); border-radius: var(--radius); padding: 18px 20px;
+  box-shadow: var(--shadow); transition: all .25s; position: relative;
+  display: flex; flex-direction: column;
+}
+.card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.card .tag {
+  display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px;
+  background: #eef1ff; color: var(--primary); margin-bottom: 6px; width: fit-content;
+}
+.card h3 { font-size: 16px; font-weight: 600; }
+.card h3 a { color: var(--text); text-decoration: none; }
+.card h3 a:hover { color: var(--primary); }
+.card p { font-size: 13px; color: var(--text-secondary); margin-top: 4px; flex: 1; }
+.card .url-row {
+  margin-top: 10px; display: flex; align-items: center; justify-content: space-between;
+}
+.card .url-row a {
+  font-size: 13px; color: var(--primary); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.card .url-row a:hover { text-decoration: underline; }
+.card .hot-badge {
+  position: absolute; top: 12px; right: 12px;
+  background: var(--hot); color: #fff; font-size: 11px; padding: 2px 8px;
+  border-radius: 4px; font-weight: 600;
+}
+
+/* Footer */
+footer {
+  text-align: center; padding: 32px 24px; color: var(--text-secondary); font-size: 13px;
+}
+footer a { color: var(--primary); text-decoration: none; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  header h1 { font-size: 1.5rem; }
+  .res-grid { grid-template-columns: 1fr; }
+  .search-box { flex-direction: column; }
+  .search-box .stat { justify-content: center; }
+  .cat-nav button { font-size: 13px; padding: 6px 12px; }
+}
+
+/* Ads placeholder */
+.ad-placeholder {
+  background: var(--card-bg); border: 2px dashed var(--border);
+  border-radius: var(--radius); padding: 24px; text-align: center;
+  margin: 16px 0; color: var(--text-secondary); font-size: 14px;
+}
+.ad-placeholder .ad-label {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1px; opacity: .5;
+}

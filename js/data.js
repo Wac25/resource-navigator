@@ -142,6 +142,107 @@ const resources = [
   { name: '百度统计', desc: '百度网站流量分析工具', url: 'https://tongji.baidu.com', cat: 'marketing', tag: '分析' },
   { name: '灰豚数据', desc: '抖音数据分析平台', url: 'https://www.huitun.com', cat: 'marketing', tag: '短视频' },
   { name: '蝉妈妈', desc: '抖音/小红书电商数据分析', url: 'https://www.chanmama.com', cat: 'marketing', tag: '电商' },
+
+  // ========== AI 工具（新增） ==========
+  { name: '智谱清言', desc: '智谱 AI 出品，基于 GLM 模型的中文 AI 助手', url: 'https://chatglm.cn', cat: 'ai', tag: '对话', hot: true },
+  { name: '讯飞星火', desc: '科大讯飞出品的大语言模型，支持多模态', url: 'https://xinghuo.xfyun.cn', cat: 'ai', tag: '对话' },
+  { name: '天工 AI', desc: '昆仑万维出品，支持搜索增强的 AI 助手', url: 'https://www.tiangong.cn', cat: 'ai', tag: '对话' },
+  { name: '百川智能', desc: '王小川创立的 AI 助手，擅长中文理解', url: 'https://www.baichuan-ai.com', cat: 'ai', tag: '对话' },
+  { name: '腾讯混元', desc: '腾讯出品的 AI 大模型，集成在微信中', url: 'https://hunyuan.tencent.com', cat: 'ai', tag: '对话' },
+  { name: '文心一格', desc: '百度的 AI 绘画工具，中文描述生成图片', url: 'https://yige.baidu.com', cat: 'ai', tag: '绘画' },
+  { name: 'Poe', desc: '聚合 ChatGPT/Claude/Gemini 等模型的对话平台', url: 'https://poe.com', cat: 'ai', tag: '聚合', hot: true },
+  { name: 'Cursor', desc: 'AI 原生代码编辑器，内置智能补全与对话', url: 'https://cursor.sh', cat: 'ai', tag: '编程', hot: true },
+  { name: 'GitHub Copilot', desc: 'AI 编程助手，代码自动补全与生成', url: 'https://github.com/features/copilot', cat: 'ai', tag: '编程' },
+  { name: 'Suno', desc: 'AI 音乐生成工具，通过文字描述创作歌曲', url: 'https://suno.com', cat: 'ai', tag: '音乐' },
+  { name: '海螺 AI', desc: 'MiniMax 出品的 AI 视频生成工具', url: 'https://hailuoai.com', cat: 'ai', tag: '视频' },
+  { name: 'Pika', desc: 'AI 视频生成与编辑工具', url: 'https://pika.art', cat: 'ai', tag: '视频' },
+  { name: 'Napkin AI', desc: 'AI 一键将文字转化为信息图/流程图', url: 'https://www.napkin.ai', cat: 'ai', tag: '办公' },
+
+  // ========== 设计资源（新增） ==========
+  { name: '创客贴', desc: '国内在线平面设计平台，模板极丰富', url: 'https://www.chuangkit.com', cat: 'design', tag: '平面' },
+  { name: '图怪兽', desc: '在线图片编辑与模板设计平台', url: 'https://www.guaishou.com', cat: 'design', tag: '平面' },
+  { name: 'Mockplus', desc: '国产原型设计工具，快速制作 APP 原型', url: 'https://www.mockplus.cn', cat: 'design', tag: 'UI' },
+  { name: '即时设计', desc: '国产在线 UI 设计协作平台', url: 'https://js.design', cat: 'design', tag: 'UI' },
+  { name: '字由', desc: '海量中文字体管理与使用工具', url: 'https://www.hellofont.cn', cat: 'design', tag: '字体' },
+  { name: 'Huaban', desc: '花瓣网，设计灵感与素材采集平台', url: 'https://huaban.com', cat: 'design', tag: '灵感' },
+  { name: '站酷', desc: '国内设计师社区，优秀作品展示', url: 'https://www.zcool.com.cn', cat: 'design', tag: '社区' },
+  { name: 'Dribbble', desc: '全球设计师作品展示社区', url: 'https://dribbble.com', cat: 'design', tag: '社区' },
+  { name: 'Behance', desc: 'Adobe 旗下设计师作品展示平台', url: 'https://www.behance.net', cat: 'design', tag: '社区' },
+
+  // ========== 开发工具（新增） ==========
+  { name: 'Docker', desc: '容器化平台，打包与部署应用的行业标准', url: 'https://www.docker.com', cat: 'dev', tag: '容器' },
+  { name: 'MySQL', desc: '最流行的开源关系型数据库', url: 'https://www.mysql.com', cat: 'dev', tag: '数据库' },
+  { name: 'MongoDB', desc: '开源 NoSQL 文档数据库', url: 'https://www.mongodb.com', cat: 'dev', tag: '数据库' },
+  { name: 'Redis', desc: '高性能内存缓存数据库', url: 'https://redis.io', cat: 'dev', tag: '数据库' },
+  { name: 'Nginx', desc: '高性能 Web 服务器与反向代理', url: 'https://nginx.org', cat: 'dev', tag: '服务器' },
+  { name: 'PM2', desc: 'Node.js 进程管理工具', url: 'https://pm2.keymetrics.io', cat: 'dev', tag: '运维' },
+  { name: 'Figma Dev Mode', desc: 'Figma 开发者模式，便捷查看设计标注', url: 'https://www.figma.com', cat: 'dev', tag: '协作' },
+  { name: 'Insomnia', desc: '开源 API 调试与测试工具', url: 'https://insomnia.rest', cat: 'dev', tag: 'API' },
+  { name: 'Python', desc: '最流行的编程语言之一，AI/数据科学首选', url: 'https://www.python.org', cat: 'dev', tag: '语言' },
+  { name: 'Node.js', desc: 'JavaScript 运行时，构建高性能后端', url: 'https://nodejs.org', cat: 'dev', tag: '语言' },
+
+  // ========== 在线学习（新增） ==========
+  { name: '极客时间', desc: 'IT 领域付费课程平台，讲师均为业内专家', url: 'https://time.geekbang.org', cat: 'learn', tag: '编程', hot: true },
+  { name: '得到', desc: '知识付费平台，涵盖商业/科技/人文等', url: 'https://www.dedao.cn', cat: 'learn', tag: '综合' },
+  { name: '网易云课堂', desc: '网易出品的综合学习平台', url: 'https://study.163.com', cat: 'learn', tag: '综合' },
+  { name: '腾讯课堂', desc: '腾讯出品的在线教育平台', url: 'https://ke.qq.com', cat: 'learn', tag: '综合' },
+  { name: '牛客网', desc: '程序员笔试面试刷题与求职平台', url: 'https://www.nowcoder.com', cat: 'learn', tag: '求职' },
+  { name: '力扣中国', desc: 'LeetCode 中文站，算法面试刷题', url: 'https://leetcode.cn', cat: 'learn', tag: '算法' },
+  { name: 'GitHub Learning Lab', desc: 'GitHub 官方交互式学习平台', url: 'https://lab.github.com', cat: 'learn', tag: '编程' },
+  { name: 'Roadmap.sh', desc: '开发者学习路线图，规划技能树', url: 'https://roadmap.sh', cat: 'learn', tag: '规划', hot: true },
+  { name: 'DevOps Roadmap', desc: 'DevOps 工程师完整学习路径', url: 'https://roadmap.sh/devops', cat: 'learn', tag: '运维' },
+
+  // ========== 效率工具（新增） ==========
+  { name: 'Obsidian', desc: '本地优先的知识管理与笔记应用', url: 'https://obsidian.md', cat: 'productivity', tag: '笔记', hot: true },
+  { name: 'Logseq', desc: '开源大纲式知识管理工具', url: 'https://logseq.com', cat: 'productivity', tag: '笔记' },
+  { name: '幕布', desc: '极简大纲笔记，一键生成思维导图', url: 'https://mubu.com', cat: 'productivity', tag: '笔记' },
+  { name: 'uTools', desc: '效率启动器，集成搜索/翻译/计算等插件', url: 'https://u.tools', cat: 'productivity', tag: '启动器', hot: true },
+  { name: 'Quicker', desc: 'Windows 效率工具，快捷动作面板', url: 'https://getquicker.net', cat: 'productivity', tag: '启动器' },
+  { name: 'Listary', desc: 'Windows 文件搜索与快速启动', url: 'https://www.listary.com', cat: 'productivity', tag: '搜索' },
+  { name: 'Wox', desc: 'Windows 开源快捷启动器', url: 'https://wox.one', cat: 'productivity', tag: '启动器' },
+  { name: 'CopyTranslator', desc: '翻译利器，选中即译', url: 'https://copytranslator.github.io', cat: 'productivity', tag: '翻译' },
+  { name: 'Clash Verge', desc: '跨平台代理客户端', url: 'https://github.com/clash-verge-rev/clash-verge-rev', cat: 'productivity', tag: '网络' },
+
+  // ========== 写作创作（新增） ==========
+  { name: '火山写作', desc: '字节出品的 AI 中文写作助手', url: 'https://www.writingo.net', cat: 'writing', tag: 'AI' },
+  { name: '写作猫', desc: 'AI 辅助中文写作工具', url: 'https://xiezuocat.com', cat: 'writing', tag: 'AI' },
+  { name: '讯飞听见', desc: '语音转文字，会议录音整理', url: 'https://www.iflyrec.com', cat: 'writing', tag: '语音' },
+  { name: '剪映图文', desc: '剪映的文字转视频功能', url: 'https://www.capcut.cn', cat: 'writing', tag: '视频' },
+  { name: '秘塔写作', desc: 'AI 辅助写作与内容生成', url: 'https://metaso.cn', cat: 'writing', tag: 'AI' },
+
+  // ========== 免费素材（新增） ==========
+  { name: 'Storyset', desc: '免费可商用插画，可自定义颜色与风格', url: 'https://storyset.com', cat: 'free', tag: '插画' },
+  { name: 'ManyPixels', desc: '免费开源插画库，支持 PNG/SVG 下载', url: 'https://www.manypixels.co', cat: 'free', tag: '插画' },
+  { name: 'LottieFiles', desc: '免费 Lottie 动画素材库', url: 'https://lottiefiles.com', cat: 'free', tag: '动画' },
+  { name: 'Freesound', desc: '免费音效与音乐素材社区', url: 'https://freesound.org', cat: 'free', tag: '音效' },
+  { name: '中国色', desc: '中国传统颜色配色参考', url: 'http://zhongguose.com', cat: 'free', tag: '配色' },
+
+  // ========== 图片处理（新增） ==========
+  { name: 'ILoveIMG', desc: '在线批量图片压缩/调整/裁剪', url: 'https://www.iloveimg.com', cat: 'image', tag: '压缩' },
+  { name: 'ImgURL', desc: '免费图床服务，图片外链托管', url: 'https://imgurl.org', cat: 'image', tag: '图床' },
+  { name: 'SM.MS', desc: '免费图片托管与分享服务', url: 'https://sm.ms', cat: 'image', tag: '图床' },
+  { name: '水印管家', desc: '在线批量给图片加水印', url: 'https://www.watermark.wang', cat: 'image', tag: '水印' },
+
+  // ========== 在线工具（新增） ==========
+  { name: '临时邮箱', desc: '一次性临时邮箱，保护隐私', url: 'https://www.linshiyouxiang.net', cat: 'tool', tag: '隐私' },
+  { name: 'Temp Mail', desc: '国外临时邮箱服务', url: 'https://temp-mail.org', cat: 'tool', tag: '隐私' },
+  { name: '在线计算器', desc: '多功能在线科学计算器', url: 'https://web2.0calc.com', cat: 'tool', tag: '计算' },
+  { name: 'ProcessOn 作图', desc: '在线流程图/思维导图/UML 图', url: 'https://www.processon.com', cat: 'tool', tag: '作图' },
+  { name: 'Excalidraw', desc: '开源在线白板，手绘风格图表', url: 'https://excalidraw.com', cat: 'tool', tag: '作图' },
+  { name: '石墨表单', desc: '在线表单与问卷制作', url: 'https://shimo.im/forms', cat: 'tool', tag: '表单' },
+  { name: '在线录屏', desc: '浏览器端在线录制屏幕', url: 'https://www.screencastify.com', cat: 'tool', tag: '录屏' },
+  { name: 'ipip.net', desc: 'IP 地址查询与网络工具', url: 'https://www.ipip.net', cat: 'tool', tag: '网络' },
+  { name: 'Speedtest', desc: '在线网速测试', url: 'https://www.speedtest.net', cat: 'tool', tag: '网络' },
+
+  // ========== 营销运营（新增） ==========
+  { name: '巨量算数', desc: '抖音趋势分析与热点追踪', url: 'https://trendinsight.oceanengine.com', cat: 'marketing', tag: '短视频' },
+  { name: '百度指数', desc: '百度搜索热度趋势分析', url: 'https://index.baidu.com', cat: 'marketing', tag: '数据' },
+  { name: '微信指数', desc: '微信搜索热度趋势', url: 'https://wx.qq.com', cat: 'marketing', tag: '数据' },
+  { name: '头条指数', desc: '今日头条热度趋势分析', url: 'https://www.toutiao.com', cat: 'marketing', tag: '数据' },
+  { name: 'SEMrush', desc: '全球 SEO 与竞品分析工具', url: 'https://www.semrush.com', cat: 'marketing', tag: 'SEO' },
+  { name: 'Ahrefs', desc: '专业 SEO 分析与外链研究工具', url: 'https://ahrefs.com', cat: 'marketing', tag: 'SEO' },
+  { name: '神策数据', desc: '用户行为分析与数据运营平台', url: 'https://www.sensorsdata.cn', cat: 'marketing', tag: '分析' },
+  { name: 'GrowingIO', desc: '增长分析与用户运营平台', url: 'https://www.growingio.com', cat: 'marketing', tag: '分析' },
 ];
 
 const categories = [
